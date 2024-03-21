@@ -59,7 +59,6 @@
 
 .link {
   display: flex;
-  /* width: 216px; */
   padding: 10px 70px 12px 70px;
   justify-content: center;
   align-items: center;
@@ -80,7 +79,8 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $white;
   }
 }
@@ -94,8 +94,5 @@
   line-height: calc(14 / 12);
   text-transform: uppercase;
 
-  width: 217px;
   margin-top: 12px;
-  margin-left: auto;
-  margin-right: auto;
 }

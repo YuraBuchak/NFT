@@ -12,7 +12,7 @@ const Hero = () => {
           <div className={scss.imageWrapper}>
             <img src={image} alt="monkey" className={scss.image} />
           </div>
-          <a href="" className={scss.link}>
+          <a href="https://www.linkedin.com" className={scss.link}>
             MEET APES
           </a>
           <p className={scss.description}>
