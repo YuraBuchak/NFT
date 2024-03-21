@@ -17,7 +17,7 @@
 
 .container {
   @extend %containerSection;
-  outline: white 1px solid;
+  /* outline: white 1px solid; */
   height: 100%;
 }
 
@@ -93,6 +93,8 @@
   font-weight: 400;
   line-height: calc(14 / 12);
   text-transform: uppercase;
-
+  width: 217px;
   margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
 }
