@@ -1,0 +1,6 @@
+@import '../styles/index.scss';
+
+.container {
+  @extend %container;
+  outline: red 1px solid;
+}
