@@ -1,0 +1,16 @@
+@import '../../styles/index.scss';
+
+.artCard {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 216px;
+  height: 256px;
+  border-radius: 12px;
+  background: $grey-bgr;
+  overflow: hidden;
+}
+
+.artImg {
+  width: 100%;
+}

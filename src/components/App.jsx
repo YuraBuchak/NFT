@@ -3,6 +3,7 @@ import scss from './App.module.scss';
 import About from './about-section/About';
 import MindMap from './mind-map-section/MindMap';
 import Faq from './faq-section/Faq';
+import Arts from './arts-section/Arts';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
       <About />
       <MindMap />
       <Faq />
+      <Arts />
     </div>
   );
 };
