@@ -4,6 +4,7 @@ import { register } from 'swiper/element/bundle';
 import MindMapCard from 'components/mind-map-card/MindMapCard';
 import MindMapCardLimk from 'components/mind-map-card/MindMapCardLink';
 import BtnChangeSlide from 'components/btnChangeSlide/BtnChangeSlide';
+import SectionTitle from 'components/section-title/SectionTitle';
 
 register();
 
@@ -31,7 +32,7 @@ const MindMap = () => {
   };
   return (
     <div className={scss.container}>
-      <h2 className={scss.title}>MIND map</h2>
+      <SectionTitle title="MIND map" />
 
       <swiper-container ref={swiperElRef} slides-per-view="1">
         <swiper-slide>
