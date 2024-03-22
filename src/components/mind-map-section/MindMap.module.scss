@@ -4,25 +4,3 @@
   @extend %containerSection;
   margin-top: 60px;
 }
-
-.btnWrapper {
-  display: flex;
-  justify-content: space-between;
-
-  padding-left: 33px;
-  padding-right: 33px;
-  width: 216px;
-  margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btnChange {
-  color: $white;
-  font-family: $biro-script-plus;
-  font-size: 24px;
-
-  line-height: calc(24 / 24);
-  background-color: transparent;
-  border-color: transparent;
-}
