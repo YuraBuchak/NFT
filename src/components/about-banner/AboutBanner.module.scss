@@ -1,0 +1,32 @@
+@import '../../styles/index.scss';
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  overflow: hidden;
+
+  background-color: $red-bgr;
+}
+
+.text {
+  display: inline-block;
+  color: $white;
+  font-family: $right-grotesk;
+  font-size: 36px;
+  font-weight: $font-weight-900;
+  line-height: calc(36 / 36);
+  text-transform: uppercase;
+  text-wrap: nowrap;
+
+  animation: slideLeft 10s linear infinite;
+}

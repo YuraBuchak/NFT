@@ -1,0 +1,44 @@
+@import '../../styles/index.scss';
+
+.card {
+  display: flex;
+  width: 216px;
+  height: 242px;
+  padding: 24px 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 12px;
+  background-color: $black;
+}
+
+.cardDescription {
+  color: $white;
+  font-family: $messina-sans-mono;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  text-transform: uppercase;
+}
+
+.cardTitle {
+  color: $white;
+  font-family: $right-grotesk;
+  font-size: 32px;
+  font-weight: $font-weight-900;
+  line-height: calc(32 / 32);
+  text-transform: uppercase;
+}
+
+// MindMapCardLimk
+
+a.card {
+  display: flex;
+  background-color: $red-bgr;
+}
+
+.arrowIcon {
+  display: flex;
+  margin-left: auto;
+}

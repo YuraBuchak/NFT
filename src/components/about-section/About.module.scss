@@ -62,8 +62,11 @@
 }
 
 .imageWrapper {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 216px;
+  height: 292px;
 
   margin-top: 40px;
   grid-area: 4 / 1 / 5 / 2;

@@ -1,6 +1,7 @@
 import scss from './About.module.scss';
 import { ReactComponent as IconCross } from '../../icons/cross.svg';
 import image from '../../images/about/about-mobile.webp';
+import AboutBanner from 'components/about-banner/AboutBanner';
 
 const About = () => {
   return (
@@ -37,6 +38,8 @@ const About = () => {
           <img src={image} alt="monkey" className={scss.image} />
         </div>
       </div>
+
+      <AboutBanner />
     </>
   );
 };
