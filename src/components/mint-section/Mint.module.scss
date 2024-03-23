@@ -1,0 +1,27 @@
+@import '../../styles/index.scss';
+
+.container {
+  @extend %containerSection;
+  margin-top: 60px;
+
+  @extend %flex-centered;
+  flex-direction: column;
+
+  //   outline: 1px solid red;
+}
+
+.iconCross {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: $white;
+  width: 216px;
+  text-align: center;
+  font-family: $messina-sans-mono;
+  font-weight: 400;
+  line-height: calc(14 / 12);
+  text-transform: uppercase;
+}

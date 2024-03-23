@@ -1,0 +1,20 @@
+@import '../../styles/index.scss';
+
+.container {
+  @extend %containerSection;
+  margin-top: 60px;
+
+  @extend %flex-centered;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.description {
+  color: $white;
+  text-align: center;
+  font-family: $messina-sans-mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: calc(14 / 12);
+  text-transform: upercase;
+}
