@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NFT/static/css/main.266a938c.css",
-    "main.js": "/NFT/static/js/main.8d20399c.js",
+    "main.css": "/NFT/static/css/main.f1875ca7.css",
+    "main.js": "/NFT/static/js/main.02ed3439.js",
     "static/media/BiroScriptUSPlus-Sloppy.eot": "/NFT/static/media/BiroScriptUSPlus-Sloppy.5ca5e866111ab6b0e8a3.eot",
     "static/media/BiroScriptUSPlus-Sloppy.ttf": "/NFT/static/media/BiroScriptUSPlus-Sloppy.10812daae86fa2a0d3ab.ttf",
     "static/media/BiroScriptPlus-Sloppy.eot": "/NFT/static/media/BiroScriptPlus-Sloppy.857bca03a4cce14fd651.eot",
@@ -68,18 +68,21 @@
     "static/media/img4.webp": "/NFT/static/media/img4.503fad169777b0b41d03.webp",
     "static/media/img9.webp": "/NFT/static/media/img9.c94d1150b3ed6f4dd5a7.webp",
     "static/media/img8.webp": "/NFT/static/media/img8.680a86818a8e44611703.webp",
+    "static/media/logo.svg": "/NFT/static/media/logo.f02a254546157de2f5ca1f0a243a3696.svg",
     "static/media/img5.webp": "/NFT/static/media/img5.c1b96c42703b6cee99da.webp",
     "static/media/img3.webp": "/NFT/static/media/img3.13c431da8daed126e2be.webp",
-    "static/media/meta.svg": "/NFT/static/media/meta.cb38c30b2f543fab3600a59c40e480aa.svg",
-    "static/media/discord.svg": "/NFT/static/media/discord.99934cd24bf623371ba632c21e5135a2.svg",
+    "static/media/meta.svg": "/NFT/static/media/meta.955ef5a85ef2001b239aba4cbf867665.svg",
+    "static/media/logomark.svg": "/NFT/static/media/logomark.9412cb4d3b6de3601334c6514bfad3dd.svg",
+    "static/media/discord.svg": "/NFT/static/media/discord.64901cc46add1b4d4672f44e68712967.svg",
     "index.html": "/NFT/index.html",
+    "static/media/logox.svg": "/NFT/static/media/logox.d756644b00c5321b8c5af85f572473b3.svg",
     "static/media/cross.svg": "/NFT/static/media/cross.ad5b8703da78a65ac822a0c22f26dc07.svg",
-    "static/media/arrow.svg": "/NFT/static/media/arrow.350ebf6701762214c601cfec4f05d388.svg",
-    "main.266a938c.css.map": "/NFT/static/css/main.266a938c.css.map",
-    "main.8d20399c.js.map": "/NFT/static/js/main.8d20399c.js.map"
+    "static/media/arrow.svg": "/NFT/static/media/arrow.7b74e1e9c57e651a75182200ff3d9632.svg",
+    "main.f1875ca7.css.map": "/NFT/static/css/main.f1875ca7.css.map",
+    "main.02ed3439.js.map": "/NFT/static/js/main.02ed3439.js.map"
   },
   "entrypoints": [
-    "static/css/main.266a938c.css",
-    "static/js/main.8d20399c.js"
+    "static/css/main.f1875ca7.css",
+    "static/js/main.02ed3439.js"
   ]
 }
