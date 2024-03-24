@@ -2,19 +2,54 @@
 
 .card {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  width: 216px;
+  @extend %margin-auto;
 
+  position: relative;
+
+  width: 216px;
   border-radius: 12px;
-  color: $white;
+
+  @media screen and (min-width: $tablet) {
+    width: 592px;
+    border-radius: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1032px;
+  }
 
   &.expanded {
-    background-color: $red-bgr;
     flex-direction: column;
     gap: 10px;
     padding: 8px 8px 8px 10px;
     background: $black;
+
+    @media screen and (min-width: $tablet) {
+      border-radius: 16px;
+      padding: 18px 18px 23px 18px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 24px;
+    }
+  }
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  @extend %margin-auto;
+  color: $white;
+  gap: 10px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 170px;
+    gap: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 330px;
+    gap: 36px;
   }
 }
 
@@ -26,10 +61,11 @@
 .question {
   color: $white;
   font-family: $right-grotesk;
-  font-size: 20px;
   font-weight: $font-weight-900;
-  line-height: calc(20 / 20);
   text-transform: uppercase;
+
+  @include media(font-size, 20px, 32px, 64px);
+  @include media(line-height, calc(20 / 20), calc(32 / 32), calc(64 / 64));
 
   &.expandedQuestion {
     color: $red-bgr;
@@ -39,8 +75,9 @@
 .numbering {
   color: $red-bgr;
   font-family: $biro-script-plus;
-  font-size: 12px;
-  line-height: calc(20 / 12);
+
+  @include media(font-size, 12px, 16px, 24px);
+  @include media(line-height, calc(20 / 12), calc(27 / 16), calc(40 / 24));
 
   &.expandedNumbering {
     color: $white;
@@ -50,9 +87,44 @@
 .answer {
   color: $white;
   font-family: $messina-sans-mono;
-  font-size: 12px;
-  line-height: calc(14 / 12);
   text-transform: uppercase;
-  margin-left: 22px;
   font-weight: $font-weight-400;
+
+  @include media(font-size, 12px, 12px, 16px);
+  @include media(line-height, calc(14 / 12), calc(14 / 12), calc(19 / 16));
+  @include media(margin-left, 22px, 30px, 35px);
+}
+
+.avatarWrapperMedia {
+  @media screen and (max-width: ($tablet - 0.1)) {
+    display: none;
+  }
+}
+
+.avatarWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 183px;
+  height: 183px;
+  transform: rotate(-16deg);
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  @media screen and (min-width: $desktop) {
+    width: 306px;
+    height: 282px;
+    transform: rotate(-8deg);
+  }
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
 }

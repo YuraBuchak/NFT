@@ -15,7 +15,7 @@ const Faq = () => {
     }
   };
   return (
-    <div className={scss.container}>
+    <section className={scss.container}>
       <SectionTitle title="FAQ" />
 
       <ul className={scss.cardsWrapper}>
@@ -29,7 +29,7 @@ const Faq = () => {
           />
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

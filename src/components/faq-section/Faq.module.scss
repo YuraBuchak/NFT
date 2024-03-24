@@ -2,11 +2,14 @@
 
 .container {
   @extend %containerSection;
-  margin-top: 60px;
+
+  @include media(margin-top, 60px, 80px, 120px);
+  // outline: 1px solid wheat;
 }
 
 .cardsWrapper {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+
+  @include media(gap, 8px, 18px, 24px);
 }
