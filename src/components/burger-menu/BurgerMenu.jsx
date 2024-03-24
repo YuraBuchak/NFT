@@ -12,34 +12,34 @@ const BurgerMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // useEffect(() => {
-  //   const handleEscape = event => {
-  //     if (event.key === 'Escape') {
-  //       setIsOpen(false);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleEscape = event => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
 
-  //   const handleBackdropClick = event => {
-  //     if (event.target.classList.contains(scss.burgerMenuBtn)) {
-  //       return;
-  //     }
-  //     setIsOpen(false);
-  //   };
+    const handleBackdropClick = event => {
+      if (event.target.classList.contains(scss.burgerMenuBtn)) {
+        return;
+      }
+      setIsOpen(false);
+    };
 
-  //   if (isOpen) {
-  //     document.body.classList.add('Nooverflow');
-  //     document.addEventListener('keydown', handleEscape);
-  //     document.addEventListener('click', handleBackdropClick);
-  //   } else {
-  //     document.body.classList.remove('Nooverflow');
-  //   }
+    if (isOpen) {
+      document.body.classList.add('Nooverflow');
+      document.addEventListener('keydown', handleEscape);
+      document.addEventListener('click', handleBackdropClick);
+    } else {
+      document.body.classList.remove('Nooverflow');
+    }
 
-  //   return () => {
-  //     document.removeEventListener('keydown', handleEscape);
-  //     document.removeEventListener('click', handleBackdropClick);
-  //     document.body.classList.remove('Nooverflow');
-  //   };
-  // }, [isOpen]);
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+      document.removeEventListener('click', handleBackdropClick);
+      document.body.classList.remove('Nooverflow');
+    };
+  }, [isOpen]);
 
   return (
     <div className={scss.burgerMenu}>
