@@ -17,13 +17,15 @@ const ArtsSwiper = () => {
     register();
 
     const params = {
-      slidesPerView: 1,
       breakpoints: {
         1280: {
           slidesPerView: 4,
         },
         768: {
           slidesPerView: 2,
+        },
+        200: {
+          slidesPerView: 1,
         },
       },
     };
