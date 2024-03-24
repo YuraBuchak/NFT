@@ -1,0 +1,71 @@
+@import '../../styles/index.scss';
+
+// .burgerMenu {
+
+// }
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $black;
+  display: flex;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  max-width: 464px;
+  height: 100%;
+  padding: 62px 16px 0 16px;
+}
+
+.link {
+  color: #fff;
+  font-family: 'Messina Sans Mono';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.logo {
+  width: 48px;
+  height: 32px;
+  fill: $white;
+}
+
+.headWrapper {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+.navigarionWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 186px;
+}
+
+.btnWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  // @media screen and (min-width: 600px) {
+  //   display: none;
+  // }
+}

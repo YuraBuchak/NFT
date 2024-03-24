@@ -12,21 +12,27 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  gap: 24px;
   overflow: hidden;
-
+  padding: 6px 0px 8px 0px;
   background-color: $red-bgr;
+
+  @include media(gap, 24px, 24px, 36px);
+
+  @media screen and (min-width: $desktop) {
+    padding: 6px 0px 16px 0px;
+  }
 }
 
 .text {
   display: inline-block;
   color: $white;
   font-family: $right-grotesk;
-  font-size: 36px;
   font-weight: $font-weight-900;
-  line-height: calc(36 / 36);
   text-transform: uppercase;
   text-wrap: nowrap;
 
   animation: slideLeft 10s linear infinite;
+
+  @include media(font-size, 36px, 36px, 64px);
+  @include media(line-height, calc(36 / 36), calc(36 / 36), calc(64 / 64));
 }

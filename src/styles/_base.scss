@@ -8,11 +8,14 @@ body {
   font-family: 'Manrope', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  overflow-y: scroll;
+  // overflow-y: hidden;
   overflow-x: hidden;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 h1,

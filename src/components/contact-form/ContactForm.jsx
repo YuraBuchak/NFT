@@ -58,7 +58,7 @@ const ContactForm = () => {
     >
       <div className={scss.labelWrapper}>
         <div className={scss.iconWrapper}>
-          <IconDisc />
+          <IconDisc className={scss.iconDisc} />
         </div>
         <label className={scss.label}>
           <input
@@ -77,7 +77,7 @@ const ContactForm = () => {
 
       <div className={scss.labelWrapper}>
         <div className={scss.iconWrapper}>
-          <IconMeta />
+          <IconMeta className={scss.iconMeta} />
         </div>
         <label className={scss.label}>
           <input

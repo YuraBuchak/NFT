@@ -1,0 +1,44 @@
+@import '../../styles/index.scss';
+
+.link {
+  @extend %flex-centered;
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(30, 30, 30, 0.1);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.iconLink {
+  width: 16px;
+  height: 16px;
+
+  transition: fill $transition-duration;
+}
+
+.black {
+  fill: $black;
+  .link:hover &,
+  .link:focus & {
+    fill: $white;
+  }
+}
+
+.white {
+  fill: $white;
+
+  .link:hover &,
+  .link:focus & {
+    fill: $black;
+  }
+}
+
+.bgrClose {
+  background: rgba(30, 30, 30, 0.1);
+}
+
+.bgrOpen {
+  background: rgba(255, 255, 255, 0.1);
+}

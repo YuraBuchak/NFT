@@ -4,6 +4,7 @@ import MindMapCard from 'components/mind-map-card/MindMapCard';
 import MindMapCardLimk from 'components/mind-map-card/MindMapCardLink';
 import slidesData from '../../data/slidesData';
 import BtnChangeWrapper from 'components/btnChangeSlide/BtnChangeWrapper';
+import scss from './MindMapSwiper.module.scss';
 
 register();
 
@@ -31,7 +32,7 @@ const MindMapSwiper = () => {
   };
 
   return (
-    <div>
+    <div className={scss.swiper}>
       <swiper-container ref={swiperElRef} slides-per-view="1">
         {slidesData.map((slide, index) => (
           <swiper-slide key={index}>

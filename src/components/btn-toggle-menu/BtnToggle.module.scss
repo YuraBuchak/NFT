@@ -1,0 +1,30 @@
+@import '../../styles/index.scss';
+
+.black {
+  color: $black;
+  background: rgba(30, 30, 30, 0.1);
+}
+
+.white {
+  color: $white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.burgerMenuBtn {
+  @extend %flex-centered;
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 8px;
+
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-color: transparent;
+
+  font-family: $messina-sans-mono;
+  font-size: 12px;
+  font-weight: $font-weight-600;
+  line-height: calc(14 / 12);
+
+  transition: color $transition-duration;
+}

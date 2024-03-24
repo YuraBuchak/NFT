@@ -7,11 +7,11 @@ const MindMapCardLimk = () => {
       href="https://www.linkedin.com"
       target="_blank"
       rel="noopener noreferrer nofollow"
-      aria-label="link"
+      aria-label="link linkedin"
       className={scss.card}
     >
       <div className={scss.arrowIcon}>
-        <IconArrow />
+        <IconArrow aria-label="arrow link svg" />
       </div>
 
       <h3 className={scss.cardTitle}>

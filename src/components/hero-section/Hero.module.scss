@@ -1,90 +1,145 @@
 @import '../../styles/index.scss';
 
 .heroContainer {
-  @media screen and (min-width: $mobile) {
+  background-color: $red-bgr;
+
+  @media screen and (max-width: ($tablet - 0.1)) {
     width: 100%;
     max-width: 464px;
-    /* height: 542px; */
-    margin-top: 64px;
-
-    padding-top: 36px;
     padding-bottom: 19px;
-
-    background-color: $red-bgr;
-    border-radius: 12px;
   }
+
+  @media screen and (min-width: $tablet) {
+    width: 736px;
+    height: 421px;
+    position: relative;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1248px;
+    height: 677px;
+  }
+
+  @include media(border-radius, 12px, 16px, 24px);
+  @include media(padding-top, 36px, 124px, 197px);
 }
 
 .container {
   @extend %containerSection;
-  /* outline: white 1px solid; */
-  height: 100%;
 }
 
 .mainTitle {
   color: $black;
   font-family: $right-grotesk;
-  font-size: 44px;
   font-weight: $font-weight-900;
   line-height: calc(44 / 44);
-  letter-spacing: 0.44px;
   text-align: center;
 
-  margin-bottom: 8px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include media(margin-bottom, 8px, 15px, 30px);
+
+  @include media(font-size, 44px, 92px, 164px);
+  @include media(letter-spacing, 0.44px, 0.92px, 0.92px);
+  @include media(line-height, calc(44 / 44), calc(92 / 92), _);
 }
 
 .subTitle {
   color: $black;
   font-family: $biro-script-plus;
-  font-size: 16px;
-  line-height: calc(27 / 16);
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @include media(font-size, 16px, 20px, 24px);
+  @include media(line-height, calc(27 / 16), calc(33 / 20), calc(40 / 24));
 }
 
 .imageWrapper {
-  /* width: 216px;
-  margin-top: 6px;
-  margin-left: auto;
-  margin-right: auto; */
-  /* height: 284px; */
-  /* height: 100%; */
-  // width: 100%;
-  // height: 100%;
+  @extend %flex-centered;
+  @extend %margin-auto;
 
   width: 216px;
   height: 284px;
-  @extend %flex-centered;
-  margin-left: auto;
-  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    z-index: 10px;
+    top: 35px;
+    right: 247px;
+
+    width: 283px;
+    height: 386px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 65px;
+    left: 180px;
+
+    width: 463px;
+    height: 612px;
+  }
 }
 
 .image {
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    z-index: 15px;
+
+    bottom: 35px;
+    right: 73px;
+    width: 190px;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    bottom: 81px;
+    right: 120px;
+    width: 337px;
+    gap: 28px;
+  }
 }
 
 .link {
   @extend %flex-centered;
-  margin-left: auto;
-  margin-right: auto;
-  width: 216px;
-
+  @extend %margin-auto;
+  display: inline-flex;
+  justify-content: center;
+  order: 1;
   padding: 10px 70px 12px 70px;
-
   border-radius: 8px;
   background: rgba(30, 30, 30, 0.1);
-
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
 
   color: $black;
   font-family: $right-grotesk;
-  font-size: 16px;
-
   font-weight: $font-weight-900;
-  line-height: calc(19 / 16);
-
   cursor: pointer;
+
+  @include media(font-size, 16px, 16px, 28px);
+  @include media(line-height, calc(19 / 16), calc(19 / 16), calc(34 / 28));
+  @include media(width, 216px, 190px, 337px);
+
+  @media screen and (min-width: $tablet) {
+    order: 2;
+    border-radius: 12px;
+    padding: 10px 61px 12px 61px;
+  }
 
   &:hover,
   &:focus {
@@ -96,12 +151,36 @@
   color: $black;
   text-align: center;
   font-family: $messina-sans-mono;
-  font-size: 12px;
   font-weight: 400;
-  line-height: calc(14 / 12);
   text-transform: uppercase;
+
   width: 217px;
-  margin-top: 12px;
+
   margin-left: auto;
   margin-right: auto;
+
+  order: 2;
+
+  @include media(font-size, 12px, 12px, 16px);
+  @include media(line-height, calc(14 / 12), calc(14 / 12), calc(19 / 16));
+
+  @media screen and (min-width: $tablet) {
+    text-align: justify;
+    order: 1;
+    width: 190px;
+
+    &::first-letter {
+      padding-left: 80px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: justify;
+    order: 1;
+    width: 337px;
+
+    &::first-letter {
+      padding-left: 80px;
+    }
+  }
 }

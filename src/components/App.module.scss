@@ -1,6 +1,27 @@
 @import '../styles/index.scss';
 
 .container {
-  @extend %container;
-  // outline: red 1px solid;
+  outline: red 1px solid;
+
+  position: relative;
+  @extend %margin-auto;
+
+  @include media(margin-top, 54px, 54px, 16px);
+
+  @media screen and (max-width: ($tablet - 0.1)) {
+    width: 100%;
+    max-width: 480px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }

@@ -1,13 +1,15 @@
 import MindMapSwiper from 'components/mind-map-swiper/MindMapSwiper';
 import scss from './MindMap.module.scss';
 import SectionTitle from 'components/section-title/SectionTitle';
+import MindMapGrid from 'components/mind-map-grid/MindMapGrid';
 
 const MindMap = () => {
   return (
-    <div className={scss.container}>
+    <section className={scss.container}>
       <SectionTitle title="MIND map" />
       <MindMapSwiper />
-    </div>
+      <MindMapGrid />
+    </section>
   );
 };
 

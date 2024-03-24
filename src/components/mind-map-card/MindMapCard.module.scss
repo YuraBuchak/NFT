@@ -2,25 +2,44 @@
 
 .card {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @extend %margin-auto;
+  background-color: $black;
+
   width: 216px;
   height: 242px;
   padding: 24px 12px;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-
   border-radius: 12px;
-  background-color: $black;
+
+  @media screen and (min-width: $tablet) {
+    width: 284px;
+    height: 242px;
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 504px;
+    height: 480px;
+    padding: 24px;
+    border-radius: 24px;
+  }
 }
 
 .cardDescription {
   color: $white;
   font-family: $messina-sans-mono;
-  font-size: 12px;
-  line-height: calc(14 / 12);
   text-transform: uppercase;
   font-weight: $font-weight-400;
+
+  @include media(font-size, 12px, 12px, 24px);
+  @include media(line-height, calc(14 / 12), calc(14 / 12), calc(29 / 24));
+  @include media(width, _, 128px, 228px);
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
 }
 
 .cardTitle {
@@ -30,6 +49,9 @@
   font-weight: $font-weight-900;
   line-height: calc(32 / 32);
   text-transform: uppercase;
+
+  @include media(font-size, 32px, 32px, 64px);
+  @include media(line-height, calc(32 / 32), calc(32 / 32), calc(64 / 64));
 }
 
 // MindMapCardLink
@@ -42,4 +64,11 @@ a.card {
 .arrowIcon {
   display: flex;
   margin-left: auto;
+  width: 24px;
+  height: 24px;
+
+  @media screen and (min-width: $desktop) {
+    width: 40px;
+    height: 40px;
+  }
 }

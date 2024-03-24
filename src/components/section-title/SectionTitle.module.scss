@@ -3,11 +3,11 @@
 .title {
   color: $white;
   font-family: $right-grotesk;
-  font-size: 44px;
   font-weight: $font-weight-900;
-  line-height: calc(40 / 40);
   text-transform: uppercase;
   text-align: center;
 
-  margin-bottom: 24px;
+  @include media(font-size, 44px, 80px, 160px);
+  @include media(line-height, calc(40 / 40), calc(80 / 80), calc(160 / 160));
+  @include media(margin-bottom, 24px, 40px, 80px);
 }

@@ -2,5 +2,6 @@
 
 .container {
   @extend %containerSection;
-  margin-top: 60px;
+
+  @include media(margin-top, 60px, 80px, 120px);
 }
