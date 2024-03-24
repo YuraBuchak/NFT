@@ -15,11 +15,13 @@
   overflow: hidden;
   padding: 6px 0px 8px 0px;
   background-color: $red-bgr;
+  max-height: 52px;
 
   @include media(gap, 24px, 24px, 36px);
 
   @media screen and (min-width: $desktop) {
     padding: 6px 0px 16px 0px;
+    max-height: 86px;
   }
 }
 

@@ -5,7 +5,8 @@ const AboutBanner = () => {
   return (
     <div className={scss.wrapper}>
       <p className={scss.text}>
-        Destroy stereotypes <IconCross /> HAVE NO LIMITS <IconCross />
+        Destroy stereotypes <IconCross aria-label="icon cross" /> HAVE NO LIMITS{' '}
+        <IconCross aria-label="icon cross" />
         Break rules
       </p>
     </div>
