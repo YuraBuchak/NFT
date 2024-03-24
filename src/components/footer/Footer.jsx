@@ -5,7 +5,8 @@ const Footer = () => {
     <>
       <footer className={scss.container}>
         <p className={scss.description}>
-          &copy; Yacht ape 2024 all rights <br /> reserved
+          &copy; Yacht ape 2024 all rights <br className={scss.hiden} />{' '}
+          reserved
         </p>
       </footer>
     </>

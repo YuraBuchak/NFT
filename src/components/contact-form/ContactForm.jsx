@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import scss from './ContactForm.module.scss';
 import { ReactComponent as IconDisc } from '../../icons/discord.svg';
 import { ReactComponent as IconMeta } from '../../icons/meta.svg';
+import { Notify } from 'notiflix';
 
 const ContactForm = () => {
   const [discord, setDiscord] = useState('');
@@ -21,6 +22,7 @@ const ContactForm = () => {
       };
 
       console.log(data);
+      Notify.success('Success');
       setDiscord('');
       setMeta('');
     }
