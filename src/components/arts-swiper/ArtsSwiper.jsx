@@ -4,8 +4,6 @@ import scss from './ArtsSwiper.module.scss';
 import { useEffect, useRef } from 'react';
 import { register } from 'swiper/element/bundle';
 
-register();
-
 const ArtsSwiper = () => {
   const swiperElRef = useRef(null);
   let swiperInstance = null;
@@ -15,6 +13,23 @@ const ArtsSwiper = () => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       swiperInstance = swiperElRef.current.swiper;
     }
+
+    register();
+
+    const params = {
+      slidesPerView: 1,
+      breakpoints: {
+        1280: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+      },
+    };
+
+    Object.assign(swiperElRef.current, params);
+    swiperElRef.current.initialize();
   }, []);
 
   const handleNextSlide = () => {
@@ -32,7 +47,7 @@ const ArtsSwiper = () => {
   return (
     <>
       <ul className={scss.artCardList}>
-        <swiper-container ref={swiperElRef} slides-per-view="1">
+        <swiper-container ref={swiperElRef}>
           {arts.map((art, index) => (
             <swiper-slide key={index}>
               <li className={scss.artCard}>

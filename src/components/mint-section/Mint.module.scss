@@ -2,26 +2,30 @@
 
 .container {
   @extend %containerSection;
-  margin-top: 60px;
-
   @extend %flex-centered;
   flex-direction: column;
 
-  //   outline: 1px solid red;
+  @include media(margin-top, 60px, 80px, 120px);
+  outline: 1px solid wheat;
 }
 
 .iconCross {
   width: 36px;
   height: 36px;
-  margin-bottom: 16px;
+
+  @include media(margin-bottom, 16px, 24px, 40px);
 }
 
 .description {
   color: $white;
-  width: 216px;
+
   text-align: center;
   font-family: $messina-sans-mono;
   font-weight: 400;
-  line-height: calc(14 / 12);
+
   text-transform: uppercase;
+
+  @include media(width, 216px, 397px, 581px);
+  @include media(font-size, 16px, 16px, 24px);
+  @include media(line-height, calc(19 / 16), calc(19 / 16), calc(29 / 24));
 }

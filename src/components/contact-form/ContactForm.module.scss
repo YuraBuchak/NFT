@@ -4,7 +4,9 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 16px;
+
+  @include media(margin-top, 16px, 24px, 40px);
+  @include media(gap, 16px, 16px, 24px);
 }
 
 .labelWrapper {
@@ -24,6 +26,14 @@
   background: $black;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
+
+  @media screen and (min-width: $desktop) {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+
+    border-radius: 12px 0px 0px 12px;
+  }
 }
 
 .input {
@@ -44,6 +54,17 @@
   line-height: calc(19 / 16);
   text-transform: uppercase;
 
+  @media screen and (min-width: $tablet) {
+    width: 200px;
+    height: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 333px;
+    height: 64px;
+    border-radius: 0px 12px 12px 0px;
+  }
+
   &::placeholder {
     color: rgba(255, 255, 255, 0.24);
     font-family: $messina-sans-mono;
@@ -51,6 +72,11 @@
     font-weight: $font-weight-400;
     line-height: calc(14 / 12);
     text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
   }
 
   &:focus {
@@ -75,10 +101,22 @@
   font-size: 16px;
   font-weight: $font-weight-900;
   line-height: calc(19 / 16);
+  transition: color $transition-duration;
 
   &:hover,
   &:focus {
     color: $black;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 247px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    width: 397px;
+    padding: 16px 140px 20px 140px;
+    border-radius: 12px;
   }
 }
 

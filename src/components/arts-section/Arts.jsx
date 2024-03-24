@@ -4,10 +4,10 @@ import ArtsSwiper from 'components/arts-swiper/ArtsSwiper';
 
 const Arts = () => {
   return (
-    <div className={scss.container}>
+    <section className={scss.container}>
       <SectionTitle title="COLLECTION" />
       <ArtsSwiper />
-    </div>
+    </section>
   );
 };
 

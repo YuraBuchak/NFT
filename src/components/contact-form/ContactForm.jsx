@@ -79,7 +79,7 @@ const ContactForm = () => {
         <div className={scss.iconWrapper}>
           <IconMeta className={scss.iconMeta} />
         </div>
-        <label className={scss.label}>
+        <label className={scss.label} htmlFor="discordInput">
           <input
             className={`${scss.input} ${metaError ? scss.errorInput : ''}`}
             type="email"
@@ -89,12 +89,13 @@ const ContactForm = () => {
             placeholder="Wallet address"
             maxLength={15}
             required
+            id="discordInput"
           />
         </label>
         {metaError && <p className={scss.error}>{metaError}</p>}
       </div>
 
-      <button className={scss.btn} type="submit">
+      <button className={scss.btn} type="submit" aria-label="Submit form">
         MINT
       </button>
     </form>

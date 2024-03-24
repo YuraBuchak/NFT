@@ -7,6 +7,9 @@
   padding-right: 33px;
   width: 216px;
   margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %margin-auto;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 48px;
+  }
 }

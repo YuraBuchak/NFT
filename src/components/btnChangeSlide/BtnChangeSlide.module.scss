@@ -5,7 +5,14 @@
   font-family: $biro-script-plus;
   font-size: 24px;
 
-  line-height: calc(24 / 24);
   background-color: transparent;
   border-color: transparent;
+  transition: color $transition-duration;
+
+  @include media(line-height, calc(24 / 24), calc(30 / 24), calc(30 / 24));
+
+  &:hover,
+  &:focus {
+    color: $red-bgr;
+  }
 }

@@ -6,15 +6,15 @@ import ContactForm from 'components/contact-form/ContactForm';
 const Mint = () => {
   return (
     <>
-      <div className={scss.container}>
+      <section className={scss.container}>
         <SectionTitle title="Are you in?" />
-        <IconCross className={scss.iconCross} />
+        <IconCross className={scss.iconCross} aria-label="icon cross" />
         <p className={scss.description}>
           Join the YACHT APE community to be one of the first to receive our
           limited edition NFT
         </p>
         <ContactForm />
-      </div>
+      </section>
     </>
   );
 };
