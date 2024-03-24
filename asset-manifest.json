@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NFT/static/css/main.42e753da.css",
-    "main.js": "/NFT/static/js/main.a5822dba.js",
+    "main.css": "/NFT/static/css/main.a586af2a.css",
+    "main.js": "/NFT/static/js/main.a74be4d8.js",
     "static/media/BiroScriptUSPlus-Sloppy.eot": "/NFT/static/media/BiroScriptUSPlus-Sloppy.5ca5e866111ab6b0e8a3.eot",
     "static/media/BiroScriptUSPlus-Sloppy.ttf": "/NFT/static/media/BiroScriptUSPlus-Sloppy.10812daae86fa2a0d3ab.ttf",
     "static/media/BiroScriptPlus-Sloppy.eot": "/NFT/static/media/BiroScriptPlus-Sloppy.857bca03a4cce14fd651.eot",
@@ -82,11 +82,11 @@
     "static/media/logox.svg": "/NFT/static/media/logox.d756644b00c5321b8c5af85f572473b3.svg",
     "static/media/cross.svg": "/NFT/static/media/cross.ad5b8703da78a65ac822a0c22f26dc07.svg",
     "static/media/arrow.svg": "/NFT/static/media/arrow.7b74e1e9c57e651a75182200ff3d9632.svg",
-    "main.42e753da.css.map": "/NFT/static/css/main.42e753da.css.map",
-    "main.a5822dba.js.map": "/NFT/static/js/main.a5822dba.js.map"
+    "main.a586af2a.css.map": "/NFT/static/css/main.a586af2a.css.map",
+    "main.a74be4d8.js.map": "/NFT/static/js/main.a74be4d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.42e753da.css",
-    "static/js/main.a5822dba.js"
+    "static/css/main.a586af2a.css",
+    "static/js/main.a74be4d8.js"
   ]
 }
