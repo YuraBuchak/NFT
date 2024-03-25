@@ -5,7 +5,7 @@ import MindMapGrid from 'components/mind-map-grid/MindMapGrid';
 
 const MindMap = () => {
   return (
-    <section className={scss.container}>
+    <section className={scss.container} id="mindmap">
       <SectionTitle title="MIND map" />
       <MindMapSwiper />
       <MindMapGrid />

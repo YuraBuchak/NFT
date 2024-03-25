@@ -18,7 +18,7 @@ const Hero = () => {
 
           <div className={scss.infoWrapper}>
             <a
-              href="https://www.linkedin.com"
+              href="#mint"
               className={scss.link}
               aria-label="link to contact form"
             >

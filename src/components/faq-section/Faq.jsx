@@ -15,7 +15,7 @@ const Faq = () => {
     }
   };
   return (
-    <section className={scss.container}>
+    <section className={scss.container} id="faq">
       <SectionTitle title="FAQ" />
 
       <ul className={scss.cardsWrapper}>

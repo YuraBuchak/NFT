@@ -4,7 +4,7 @@ import ArtsSwiper from 'components/arts-swiper/ArtsSwiper';
 
 const Arts = () => {
   return (
-    <section className={scss.container}>
+    <section className={scss.container} id="arts">
       <SectionTitle title="COLLECTION" />
       <ArtsSwiper />
     </section>

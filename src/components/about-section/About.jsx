@@ -5,7 +5,7 @@ import AboutBanner from 'components/about-banner/AboutBanner';
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <div className={scss.container}>
         <h2 className={scss.title}>
           a Story that started <br /> with

@@ -6,7 +6,7 @@ import ContactForm from 'components/contact-form/ContactForm';
 const Mint = () => {
   return (
     <>
-      <section className={scss.container}>
+      <section className={scss.container} id="mint">
         <SectionTitle title="Are you in?" />
         <IconCross className={scss.iconCross} aria-label="icon cross" />
         <p className={scss.description}>

@@ -36,35 +36,35 @@ const BurgerMenu = () => {
                 toggleMenu={toggleMenu}
                 mediascreen="mobile"
                 title="About"
-                link={'/'}
+                link={'#about'}
               />
 
               <NavLink
                 toggleMenu={toggleMenu}
                 mediascreen="mobile"
                 title=" M-MAP"
-                link={'/'}
+                link={'#mindmap'}
               />
 
               <NavLink
                 toggleMenu={toggleMenu}
                 mediascreen="mobile"
                 title="FAQ"
-                link={'/'}
+                link={'#faq'}
               />
 
               <NavLink
                 toggleMenu={toggleMenu}
                 mediascreen="mobile"
                 title="ARTS"
-                link={'/'}
+                link={'#arts'}
               />
 
               <NavLink
                 toggleMenu={toggleMenu}
                 mediascreen="mobile"
                 title="MINT"
-                link={'/'}
+                link={'#mint'}
               />
             </div>
             <Copyright />
@@ -75,15 +75,15 @@ const BurgerMenu = () => {
       {isOpen && (
         <div className={scss.menuContent}>
           <div className={scss.menuItems}>
-            <NavLink toggleMenu={toggleMenu} title="About" link={'/'} />
+            <NavLink toggleMenu={toggleMenu} title="About" link={'#about'} />
 
-            <NavLink toggleMenu={toggleMenu} title="M-MAP" link={'/'} />
+            <NavLink toggleMenu={toggleMenu} title="M-MAP" link={'#mindmap'} />
 
-            <NavLink toggleMenu={toggleMenu} title="FAQ" link={'/'} />
+            <NavLink toggleMenu={toggleMenu} title="FAQ" link={'#faq'} />
 
-            <NavLink toggleMenu={toggleMenu} title="ARTS" link={'/'} />
+            <NavLink toggleMenu={toggleMenu} title="ARTS" link={'#arts'} />
 
-            <NavLink toggleMenu={toggleMenu} title="MINT" link={'/'} />
+            <NavLink toggleMenu={toggleMenu} title="MINT" link={'#mint'} />
           </div>
         </div>
       )}
