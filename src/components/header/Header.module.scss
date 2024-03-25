@@ -2,20 +2,31 @@
 
 .header {
   @media screen and (min-width: $mobile) {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 464px;
-    padding: 8px 16px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 8px;
+    z-index: 10000;
+
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 16px);
+    max-width: 464px;
+    padding: 8px;
     border-radius: 12px;
   }
 
   @media screen and (min-width: $tablet) {
+    left: 16px;
     max-width: 736px;
     padding: 12px;
+    border-radius: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1248px;
+    padding: 12px;
+    border-radius: 24px;
+    padding: 24px;
   }
 }
 
@@ -23,6 +34,15 @@
   display: block;
   width: 48px;
   height: 32px;
+
+  @media screen and (min-width: $tablet) {
+    width: 48px;
+    height: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 72px;
+    height: 50px;
+  }
 }
 
 .logo {
@@ -35,6 +55,16 @@
   .linkLogo:focus & {
     fill: $white;
   }
+  @media screen and (min-width: $tablet) {
+    width: 48px;
+    height: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 72px;
+    height: 50px;
+  }
+
+  @include media(margin-top, 8px, 8px, 15px);
 }
 
 .btnWrapper {

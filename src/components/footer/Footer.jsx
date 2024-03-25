@@ -1,13 +1,11 @@
+import Copyright from 'components/copyright-element/Copyright';
 import scss from './Footer.module.scss';
 
 const Footer = () => {
   return (
     <>
       <footer className={scss.container}>
-        <p className={scss.description}>
-          &copy; Yacht ape 2024 all rights <br className={scss.hiden} />{' '}
-          reserved
-        </p>
+        <Copyright />
       </footer>
     </>
   );

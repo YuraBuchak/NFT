@@ -1,9 +1,5 @@
 @import '../../styles/index.scss';
 
-// .burgerMenu {
-
-// }
-
 .mobileMenu {
   position: fixed;
   top: 0;
@@ -25,10 +21,10 @@
   margin-left: auto;
   margin-right: auto;
 
-  width: 100%;
+  width: calc(100% - 16px);
   max-width: 464px;
   height: 100%;
-  padding: 62px 16px 0 16px;
+  padding: 54px 8px 0 8px;
 }
 
 .link {
@@ -44,6 +40,7 @@
   width: 48px;
   height: 32px;
   fill: $white;
+  margin-top: 8px;
 }
 
 .headWrapper {
@@ -65,7 +62,29 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  // @media screen and (min-width: 600px) {
-  //   display: none;
-  // }
+}
+
+.menuContent {
+  // outline: 1px solid white;
+
+  @media screen and (max-width: ($tablet - 0.1)) {
+    display: none;
+  }
+
+  position: absolute;
+  top: 12px;
+  right: 60px;
+  z-index: 100000;
+
+  padding: 10px;
+  border-radius: 12px 0px 0px 12px;
+
+  @media screen and (min-width: $desktop) {
+    top: 25px;
+    right: 105px;
+  }
+}
+
+.menuItems {
+  display: flex;
 }

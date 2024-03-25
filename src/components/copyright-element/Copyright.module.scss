@@ -1,0 +1,18 @@
+@import '../../styles/index.scss';
+
+.description {
+  color: $white;
+  text-align: center;
+  font-family: $messina-sans-mono;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @include media(font-size, 12px, 12px, 16px);
+  @include media(line-height, calc(14 / 12), calc(14 / 12), calc(19 / 16));
+}
+
+.hiden {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

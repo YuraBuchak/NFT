@@ -7,8 +7,15 @@ const BtnToggle = ({ isOpen, toggleMenu, menu }) => {
       ? `${scss.burgerMenuBtn} ${scss.white}`
       : `${scss.burgerMenuBtn} ${scss.black}`;
 
+  const borderRadius =
+    isOpen && menu !== 'mobile' ? '0px 12px 12px 0px' : '12px';
+
+  const btnStyle = {
+    borderRadius: borderRadius,
+  };
+
   return (
-    <button className={btnClass} onClick={toggleMenu}>
+    <button className={btnClass} style={btnStyle} onClick={toggleMenu}>
       {isOpen ? 'CLOSE' : 'MENU'}
     </button>
   );
