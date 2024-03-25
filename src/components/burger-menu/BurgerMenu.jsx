@@ -32,48 +32,40 @@ const BurgerMenu = () => {
               </div>
             </div>
             <div className={scss.navigarionWrapper}>
-              <li>
-                <NavLink
-                  toggleMenu={toggleMenu}
-                  mediascreen="mobile"
-                  title="About"
-                  link={'/'}
-                />
-              </li>
+              <NavLink
+                toggleMenu={toggleMenu}
+                mediascreen="mobile"
+                title="About"
+                link={'/'}
+              />
 
-              <li>
-                <NavLink
-                  toggleMenu={toggleMenu}
-                  mediascreen="mobile"
-                  title=" M-MAP"
-                  link={'/'}
-                />
-              </li>
+              <NavLink
+                toggleMenu={toggleMenu}
+                mediascreen="mobile"
+                title=" M-MAP"
+                link={'/'}
+              />
 
-              <li>
-                <NavLink
-                  toggleMenu={toggleMenu}
-                  mediascreen="mobile"
-                  title="FAQ"
-                  link={'/'}
-                />
-              </li>
-              <li>
-                <NavLink
-                  toggleMenu={toggleMenu}
-                  mediascreen="mobile"
-                  title="ARTS"
-                  link={'/'}
-                />
-              </li>
-              <li>
-                <NavLink
-                  toggleMenu={toggleMenu}
-                  mediascreen="mobile"
-                  title="MINT"
-                  link={'/'}
-                />
-              </li>
+              <NavLink
+                toggleMenu={toggleMenu}
+                mediascreen="mobile"
+                title="FAQ"
+                link={'/'}
+              />
+
+              <NavLink
+                toggleMenu={toggleMenu}
+                mediascreen="mobile"
+                title="ARTS"
+                link={'/'}
+              />
+
+              <NavLink
+                toggleMenu={toggleMenu}
+                mediascreen="mobile"
+                title="MINT"
+                link={'/'}
+              />
             </div>
             <Copyright />
           </div>
@@ -82,23 +74,17 @@ const BurgerMenu = () => {
 
       {isOpen && (
         <div className={scss.menuContent}>
-          <ul className={scss.menuItems}>
-            <li>
-              <NavLink toggleMenu={toggleMenu} title="About" link={'/'} />
-            </li>
-            <li>
-              <NavLink toggleMenu={toggleMenu} title="M-MAP" link={'/'} />
-            </li>
-            <li>
-              <NavLink toggleMenu={toggleMenu} title="FAQ" link={'/'} />
-            </li>
-            <li>
-              <NavLink toggleMenu={toggleMenu} title="ARTS" link={'/'} />
-            </li>
-            <li>
-              <NavLink toggleMenu={toggleMenu} title="MINT" link={'/'} />
-            </li>
-          </ul>
+          <div className={scss.menuItems}>
+            <NavLink toggleMenu={toggleMenu} title="About" link={'/'} />
+
+            <NavLink toggleMenu={toggleMenu} title="M-MAP" link={'/'} />
+
+            <NavLink toggleMenu={toggleMenu} title="FAQ" link={'/'} />
+
+            <NavLink toggleMenu={toggleMenu} title="ARTS" link={'/'} />
+
+            <NavLink toggleMenu={toggleMenu} title="MINT" link={'/'} />
+          </div>
         </div>
       )}
     </div>

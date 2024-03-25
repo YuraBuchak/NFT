@@ -10,14 +10,14 @@
 
 .linkTable {
   @extend %flex-centered;
-  box-sizing: border-box;
+
   width: 48px;
   height: 48px;
-  border-radius: 8px;
 
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border-color: transparent;
+  background: rgba(30, 30, 30, 0.1);
 
   font-family: $messina-sans-mono;
   font-size: 12px;
@@ -27,8 +27,6 @@
   transition: color $transition-duration;
 
   @media screen and (min-width: $tablet) {
-    border-radius: 12px;
-
     &:hover,
     &:focus {
       color: $white;

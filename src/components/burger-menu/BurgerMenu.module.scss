@@ -27,15 +27,6 @@
   padding: 54px 8px 0 8px;
 }
 
-.link {
-  color: #fff;
-  font-family: 'Messina Sans Mono';
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 29px;
-}
-
 .logo {
   width: 48px;
   height: 32px;
@@ -65,8 +56,6 @@
 }
 
 .menuContent {
-  // outline: 1px solid white;
-
   @media screen and (max-width: ($tablet - 0.1)) {
     display: none;
   }
@@ -75,8 +64,8 @@
   top: 12px;
   right: 60px;
   z-index: 100000;
+  overflow: hidden;
 
-  padding: 10px;
   border-radius: 12px 0px 0px 12px;
 
   @media screen and (min-width: $desktop) {
